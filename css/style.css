@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     list-style-type: none;
 }
 
-:root{
+:root {
     --bg-color: #2a2a2a;
     --secong-bg-color: #202020;
     --text-color: #fff;
@@ -20,12 +20,12 @@
 
 }
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -40,38 +40,38 @@ header{
     transition: all .45s ease;
 }
 
-.logo{
+.logo {
     color: var(--text-color);
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-span{
-    color: var(--main-color);   
+span {
+    color: var(--main-color);
 }
 
-.navlist{
+.navlist {
     display: flex;
 }
 
-.navlist a{
+.navlist a {
     font-size: 17px;
     font-weight: 500;
-    color: var(--secondary-color);  
+    color: var(--secondary-color);
     margin: 0 25px;
     transition: all .45s ease;
 }
 
-.navlist a:hover{
+.navlist a:hover {
     color: var(--main-color);
 }
 
-.navlist a.active{
+.navlist a.active {
     color: var(--main-color);
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 35px;
     color: var(--text-color);
     z-index: 10001;
@@ -80,11 +80,11 @@ span{
     display: none;
 }
 
-section{
+section {
     padding: 160px 15% 120px;
 }
 
-.home{
+.home {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -96,11 +96,11 @@ section{
     justify-content: flex-start;
 }
 
-.slide{
+.slide {
     margin-bottom: 20px;
 }
 
-.one{
+.one {
     display: inline-block;
     margin-right: 15px;
     height: 32px;
@@ -113,14 +113,14 @@ section{
     color: var(--text-color);
 }
 
-.two{
+.two {
     display: inline-block;
     color: var(--secondary-color);
     font-size: 20px;
     font-weight: 500;
 }
 
-.home-text h1{
+.home-text h1 {
     font-size: var(--big-font);
     font-weight: 700;
     color: var(--text-color);
@@ -128,7 +128,7 @@ section{
     margin: 0 0 8px;
 }
 
-.home-text h3{
+.home-text h3 {
     color: var(--text-color);
     margin: 0 0 35px;
     font-size: 3rem;
@@ -136,20 +136,20 @@ section{
     line-height: 1.1;
 }
 
-.home-text p{
+.home-text p {
     color: var(--secondary-color);
     font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 40px;
 }
 
-.button{
+.button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 12px 28px;
     background: var(--main-color);
@@ -161,11 +161,11 @@ section{
     transition: all .45s ease;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(0.9);
 }
 
-.btn2{
+.btn2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +175,7 @@ section{
     margin-left: 35px;
 }
 
-.btn2 span i{
+.btn2 span i {
     height: 55px;
     width: 55px;
     background: var(--main-color);
@@ -189,73 +189,196 @@ section{
     transition: all .45s ease;
 }
 
-.btn2 span i:hover{
+.btn2 span i:hover {
     transform: scale(1.1) translateY(5px);
 }
 
-header.sticky{
+header.sticky {
     background: var(--bg-color);
     border-bottom: 1px solid #ffffff1a;
     padding: 12px 15%;
 }
 
-.sobre{
+.sobre {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
 }
 
-.sobre-img img{
+.sobre-img img {
     max-width: 530px;
     height: auto;
     width: 100%;
     border-radius: 8px;
 }
 
-.sobre-texto h2{
+.sobre-texto h2 {
     font-size: var(--h2-font);
     line-height: 1;
 }
 
-.sobre-texto h4{
+.sobre-texto h4 {
     font-size: 24px;
     font-weight: 600;
     color: var(--text-color);
     line-height: 1.7;
-    margin: 15px 0 30px;   
+    margin: 15px 0 30px;
 }
 
-.sobre-texto p{
+.sobre-texto p {
     color: var(--secondary-color);
     font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 4rem;
 }
 
-.servicos{
+.servicos {
     background: var(--secondary-bg-color);
 }
 
-.main-texto{
+.main-texto {
     text-align: center;
 }
 
-.main-texto p{
+.main-texto p {
     font-size: 15px;
     color: var(--secondary-color);
     margin-bottom: 15px;
 }
 
-.main-texto h2{
+.main-texto h2 {
     font-size: var(--h2-font);
     line-height: 1;
 }
 
-.servicos-conteudo{
+.servicos-conteudo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     text-align: center;
     gap: 2.5rem;
     margin-top: 5rem;
+}
+
+.box {
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.s-icons i {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.box p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.saiba {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #333333;
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.saiba:hover {
+    letter-spacing: 1px;
+    background: #ffffff99;
+    color: var(--text-color);
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+
+}
+
+.conteudo-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #ff004f);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p{  
+    color: var(--secondary-color);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.layer i{
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+}
+
+.row:hover .layer{
+    height: 100%;
+
 }
