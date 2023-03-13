@@ -112,6 +112,11 @@ section {
     color: var(--text-color);
 }
 
+.one:hover{
+    transform: scale(1.1);
+    transition: all .45s ease;
+}
+
 .two {
     display: inline-block;
     color: var(--second-color);
@@ -563,7 +568,7 @@ form textarea {
     }
 
     .home {
-        height: 87vh;
+        height: 105vh;
     }
 }
 
