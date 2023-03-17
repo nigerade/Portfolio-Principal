@@ -216,6 +216,7 @@ header.sticky {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
 }
 
@@ -329,7 +330,7 @@ header.sticky {
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
@@ -412,6 +413,13 @@ header.sticky {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
+}
+
+#mapa{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
 }
 
 .contact-text h4 {
@@ -511,11 +519,10 @@ form textarea {
 .end {
     padding: 20px 15%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    background: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 
 .last-text p {
@@ -637,6 +644,27 @@ form textarea {
     .navlist.open {
         top: 100%;
     }
+
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px){
+    .layer i{
+        width: 50px;
+        height: 50px;
+    }
+
+    .layer h5{
+        font-size: 1rem;
+    }
+
+    .layer p{
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 360px){
@@ -646,8 +674,62 @@ form textarea {
     }
 
     .row img{
-        width: 95%;
-        height: auto;
-        overflow: hidden;
+        width: 100%;
+        height: 12rem;
+        margin-right: 0.5rem;
+    }
+
+    .layer{
+        width: 100%;
+    }
+
+    .row:hover img {
+        transform: scale(1);
+    }
+
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .home-text p{
+        padding-right: 0.1rem;
+        text-align: center;
+    }
+
+    .home-text h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .home-text h3{
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .button{
+        padding: 0.1rem;
+    }
+
+    .slide{
+        text-align: center;
+    }
+
+    .layer{
+        font-size: small;
+    }
+
+    .layer i{
+        width: 45px;
+        height: 45px;
+    }
+
+    .layer h5{
+        font-size: 1rem;
+    }
+
+    .layer p{
+        font-size: 0.8rem;
     }
 }
