@@ -534,6 +534,7 @@ form textarea {
     font-size: 20px;
     color: var(--text-color);
     background: var(--main-color);
+
 }
 
 .top i:hover {
@@ -638,3 +639,15 @@ form textarea {
     }
 }
 
+@media (max-width: 360px){
+
+    *{
+        /*overflow-x: hidden;*/
+    }
+
+    .row img{
+        width: 95%;
+        height: auto;
+        overflow: hidden;
+    }
+}
