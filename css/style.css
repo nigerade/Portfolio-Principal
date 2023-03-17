@@ -1,14 +1,16 @@
 * {
+    /* configurações para a pagina toda */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
     list-style-type: none;
 }
 
 :root {
+    /* variaveis globais no css */
     --bg-color: #2a2a2a;
     --second-bg-color: #202020;
     --text-color: #fff;
@@ -20,11 +22,13 @@
 }
 
 body {
+    /* configuracoes para o body somente */
     background: var(--bg-color);
     color: var(--text-color);
 }
 
 header {
+    /* configuracoes do header */
     position: fixed;
     width: 100%;
     top: 0;
@@ -40,26 +44,31 @@ header {
 }
 
 .header2{
+    /* configuracoes quando o usuario clica no menu hamburguer */
     background-color: #2a2a2a;
     transition: all .45s ease;
 }
 
-.logo {
+.logo{
+    /* configuracoes do texto: Dev. */
     color: var(--text-color);
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-span {
+span{
+    /* deixa o: E, do Dev. da main color */
     color: var(--main-color);
 }
 
-.navlist {
+.navlist{
+    /* configura os links do header */
     display: flex;
 }
 
-.navlist a {
+.navlist a{
+    /* estilo dos links do header */
     font-size: 17px;
     font-weight: 510;
     color: var(--text-color);
@@ -67,15 +76,18 @@ span {
     transition: all .45s ease;
 }
 
-.navlist a:hover {
+.navlist a:hover{
+    /* ao passar o mouse por cima dos links do header */
     color: var(--main-color);
 }
 
-.navlist a:active {
+.navlist a:active{
+    /* estilo do link ativo */
     color: var(--text-color);
 }
 
-#menu-icon {
+#menu-icon{
+    /* estilo do menu hamburguer (icone) */
     font-size: 35px;
     color: var(--text-color);
     z-index: 10001;
@@ -85,10 +97,12 @@ span {
 }
 
 section {
+    /* configuracao padrao para todas as sessoes */
     padding: 160px 15% 120px;
 }
 
 .home {
+    /* estilo da section home */
     position: relative;
     height: 100vh;
     width: 100%;
@@ -103,10 +117,12 @@ section {
 }
 
 .slide {
+    /* botão saiba mais */
     margin-bottom: 20px;
 }
 
 .one {
+    /* texto: "Olá" */
     display: inline-block;
     margin-right: 15px;
     height: 32px;
@@ -120,11 +136,13 @@ section {
 }
 
 .one:hover{
+    /* hover do texto: "Olá" */
     transform: scale(1.1);
     transition: all .45s ease;
 }
 
 .two {
+    /* texto: eu sou */
     display: inline-block;
     color: var(--second-color);
     font-size: 20px;
@@ -132,6 +150,7 @@ section {
 }
 
 .home-text h1 {
+    /* texto: "Nicholas!" */
     font-size: var(--big-font);
     font-weight: 700;
     color: var(--text-color);
@@ -140,6 +159,7 @@ section {
 }
 
 .home-text h3 {
+    /* texto: "Desenvolvedor Front-end." */
     color: var(--text-color);
     margin: 0 0 35px;
     font-size: 3rem;
@@ -148,6 +168,7 @@ section {
 }
 
 .home-text p {
+    /* texto: "Técnico formado..." */
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 1.8;
@@ -155,12 +176,14 @@ section {
 }
 
 .button {
+    /* botões Diga Olá! e Veja Meu Trabalho! */
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
 .btn {
+    /* estilo botão Diga Olá */
     display: inline-block;
     padding: 12px 28px;
     background: var(--main-color);
@@ -175,10 +198,12 @@ section {
 }
 
 .btn:hover {
+    /* botão Diga Olá! */
     transform: scale(0.9);
 }
 
 .btn2 {
+    /* estilo botão Veja meu Trabalho */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -189,6 +214,7 @@ section {
 }
 
 .btn2 span i {
+    /* icone do botão Veja meu Trabalho */
     height: 55px;
     width: 55px;
     background: var(--main-color);
@@ -203,16 +229,19 @@ section {
 }
 
 .btn2 span i:hover {
+    /* hover do icone do botao veja meu trabalho */
     transform: scale(1.1) translateY(5px);
 }
 
 header.sticky {
+    /* estilo do header quando o usuario desce a pagina e mudar de bg-color */
     background: var(--bg-color);
     border-bottom: 1px solid #ffffff1a;
     padding: 12px 15%;
 }
 
 .sobre {
+    /* estilo section sobre */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -221,6 +250,7 @@ header.sticky {
 }
 
 .sobre-img img {
+    /* estilo da imagem da section sobre */
     max-width: 530px;
     height: auto;
     width: 100%;
@@ -228,11 +258,13 @@ header.sticky {
 }
 
 .sobre-texto h2 {
+    /* estilo h2 da section sobre */
     font-size: var(--h2-font);
     line-height: 1;
 }
 
 .sobre-texto h4 {
+    /* estilo h4 da section sobre*/
     font-size: 24px;
     font-weight: 600;
     color: var(--text-color);
@@ -241,6 +273,7 @@ header.sticky {
 }
 
 .sobre-texto p {
+    /* estilo p da section sobre */
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 1.8;
@@ -248,25 +281,30 @@ header.sticky {
 }
 
 .servicos {
+    /* estilo section serviços */
     background: var(--second-bg-color);
 }
 
 .main-texto {
+    /* texto da section servicos */ 
     text-align: center;
 }
 
 .main-texto p {
+    /* p da section servicos */ 
     font-size: 15px;
     color: var(--second-color);
     margin-bottom: 15px;
 }
 
 .main-texto h2 {
+    /* h2 da section servicos */ 
     font-size: var(--h2-font);
     line-height: 1;
 }
 
 .servicos-conteudo {
+    /* estilo da div */ 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     text-align: center;
@@ -275,6 +313,7 @@ header.sticky {
 }
 
 .box {
+    /* estilo da div */ 
     background: var(--bg-color);
     padding: 35px 45px;
     border-radius: 8px;
@@ -282,11 +321,13 @@ header.sticky {
 }
 
 .s-icons i {
+    /* estilo da div */ 
     font-size: 32px;
     margin-bottom: 20px;
 }
 
 .box h3 {
+    /* estilo do h3 da div */ 
     font-size: 24px;
     font-weight: 600;
     color: var(--text-color);
@@ -294,6 +335,7 @@ header.sticky {
 }
 
 .box p {
+    /* estilo do p da div */ 
     color: var(--second-color);
     font-size: 1rem;
     line-height: 1.8;
@@ -301,6 +343,7 @@ header.sticky {
 }
 
 .saiba {
+    /* estilo do botao da div da section servicos */ 
     display: inline-block;
     padding: 8px 18px;
     background: #333333;
@@ -312,6 +355,7 @@ header.sticky {
 }
 
 .saiba:hover {
+    /* hover do botao da div da section servicos */ 
     letter-spacing: 1px;
     background: var(--main-color);
     color: var(--text-color);
@@ -319,16 +363,19 @@ header.sticky {
 }
 
 .s-icons:hover {
+    /* hover do icone da div da section serviços  */ 
     color: var(--main-color);
     transition: all .45s ease;
 }
 
 .box:hover {
+    /* hover da box da section servicos */
     transform: translateY(-8px);
     cursor: pointer;
 }
 
 .portfolio-content {
+    /* estilo da section portfolio */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -337,6 +384,7 @@ header.sticky {
 }
 
 .row {
+    /* estilo da div */
     position: relative;
     overflow: hidden;
     border-radius: 8px;
@@ -344,6 +392,7 @@ header.sticky {
 }
 
 .row img {
+    /* estilo da img dentro da div */
     width: 100%;
     border-radius: 8px;
     display: block;
@@ -351,6 +400,7 @@ header.sticky {
 }
 
 .layer {
+    /* estilo da div dos textos */
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.1), #000);
@@ -369,18 +419,21 @@ header.sticky {
 }
 
 .layer h5 {
+    /* estilo do h5 da div */
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .layer p {
+    /* estilo do p da div */
     color: var(--text-color);
     font-size: 1rem;
     line-height: 1.8;
 }
 
 .layer i {
+    /* estilo do icone da div */
     color: var(--main-color);
     margin-top: 20px;
     font-size: 20px;
@@ -394,20 +447,24 @@ header.sticky {
 }
 
 #link-icon:hover {
+    /* hover icone da section portfolio */
     color: var(--text-color);
     background-color: var(--main-color);
     transition: all .90s ease;
 }
 
 .row:hover img {
+    /* hover da img dentro da row */
     transform: scale(1.1);
 }
 
 .row:hover .layer {
+    /* hover da layer dentro da row */
     height: 100%;
 }
 
 .contact {
+    /* estilo da section contato */
     background: var(--second-bg-color);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -416,6 +473,7 @@ header.sticky {
 }
 
 #mapa{
+    /* estilo da section mapa */
     width: 100%;
     padding: 1rem;
     border-radius: 2rem;
@@ -423,18 +481,21 @@ header.sticky {
 }
 
 .contact-text h4 {
+    /* estilo do h4 da section contato */
     color: var(--text-color);
     margin: 18px 0;
     font-size: 20px;
     font-weight: 600;
 }
 
-.contact-text h2 {
+.contact-text h2{
+    /* estilo do h2 da section contato */
     font-size: var(--h2-font);
     line-height: 1;
 }
 
 .contact-text p {
+    /* estilo do p da section contato */
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 1.8;
@@ -442,14 +503,17 @@ header.sticky {
 }
 
 .list {
+    /* estilo do list da section contato */
     margin-bottom: 2.8rem;
 }
 
 .list li {
+    /* estilo do li da section contato */
     margin-bottom: 12px;
 }
 
 .list li a {
+    /* estilo do a dentro da li da section contato */
     display: block;
     color: var(--second-color);
     font-size: 14px;
@@ -457,11 +521,13 @@ header.sticky {
 }
 
 .list li a:hover {
+    /* hover do a dentro da li da section contato */
     color: var(--text-color);
     transform: translateX(5px);
 }
 
-.contact-icons i {
+.contact-icons i { 
+    /* estilo dos icones da section contato */
     height: 45px;
     width: 45px;
     background: var(--main-color);
@@ -476,16 +542,19 @@ header.sticky {
 }
 
 .contact-icons i:hover {
+    /* hover dos icones da section contato */
     background: var(--text-color);
     color: var(--main-color);
 }
 
 .contact-form form {
+    /* estilo form da section contato */
     position: relative;
 }
 
 .contact-form form input,
 form textarea {
+    /* estilo do form, input, e textarea form da section contato */
     width: 100%;
     padding: 14px;
     background: var(--bg-color);
@@ -498,12 +567,14 @@ form textarea {
 }
 
 .contact-form textarea {
+    /* estilo do textarea da section contato */
     resize: none;
     height: 240px;
     margin-bottom: 1rem;
 }
 
 .contact-form .submit {
+    /* estilo do botao enviar da section contato */
     display: inline-block;
     font-size: 16px;
     background: var(--main-color);
@@ -512,11 +583,13 @@ form textarea {
 }
 
 .contact-form .submit:hover {
+    /* hover do botao enviar da section contato */
     transform: scale(0.95);
     cursor: pointer;
 }
 
 .end {
+    /* estilo do footer */
     padding: 20px 15%;
     display: flex;
     align-items: center;
@@ -526,16 +599,19 @@ form textarea {
 }
 
 .last-text p {
+    /* estilo do p da section end (Footer) */
     color: var(--second-color);
     font-size: 17px;
 }
 
 .last-text p:hover {
+    /* hover do p da section end (Footer) */
     transform: translateX(3px);
     transition: all .55s ease;
 }
 
 .top i {
+    /* estilo do icone de seta da section end (Footer) */
     padding: 10px;
     border-radius: 20%;
     font-size: 20px;
@@ -545,33 +621,42 @@ form textarea {
 }
 
 .top i:hover {
+    /* hover do icone de seta da section end (Footer) */
     transition: all .90s ease;
     transform: translateY(-4px);
     background-color: var(--text-color);
     color: var(--main-color);
 }
 
-@media (max-width: 1480px) {
+
+/* CSS RESPONSIVO */
+@media (max-width: 1480px) { /* tela até 1480px */
     header {
+        /* estilo do header */
         padding: 12px 2.5%;
         transition: .1s;
     }
 
     header.sticky {
+        /* estilo do header quando muda de classe ao scrollar */
         padding: 10px;
     }
 
     section {
+        /* estilo das sections padrao */
         padding: 110px 3% 60px;
     }
 
     .end {
+        /* estilo da section end (Footer) */
         padding: 15px 3%;
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1100px) { /* tela até 1100px */
     :root {
+        /* declarando variaveis novamente */
+        /* para mudar os valores e se adequar à tela */
         --big-font: 4rem;
         --h2-font: 2.5rem;
         --p-font: 1rem;
@@ -579,41 +664,50 @@ form textarea {
     }
 
     .home-text h3 {
+        /* estilo do h3 da section home */
         font-size: 2.5rem;
     }
 
     .home {
+        /* estilo da section home */
         height: 105vh;
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 920px) { /* tela até 920px */
     .sobre {
+        /* estilo da section sobre */
         grid-template-columns: 1fr;
     }
 
     .sobre-img {
+        /* estilo da img da section sobre */
         text-align: center;
         order: 2;
     }
 
     .sobre-img img {
+        /* estilo da img da section sobre */
         width: 100%;
         height: auto;
         max-width: 100%;
     }
 
     .contact {
+        /* estilo da section contato */
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 840px) { /* tela até 840px */
     #menu-icon {
+        /* estilo do menu hamburguer */
+        /* sai do display none e mostra o menu */
         display: block;
     }
 
     .navlist {
+        /* estilo da navlist - links header */
         position: absolute;
         top: -1000px;
         right: 0;
@@ -626,6 +720,7 @@ form textarea {
     }
 
     .navlist a {
+        /* estilo dos links da navlist */
         display: block;
         margin: 17px;
         font-size: 20px;
@@ -634,102 +729,117 @@ form textarea {
     }
 
     .navlist a:hover {
+        /* hover dos links da navlist */
         color: var(--main-color);
     }
 
     .navlist a:active {
+        /* links da navlist quando ativados */
         color: var(--text-color);
     }
 
     .navlist.open {
+        /* links da navlist quando abertos*/
         top: 100%;
     }
 
     .portfolio-content {
+        /* estilo da section portfolio */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px){ /* tela até 500px */
     .layer i{
+        /* estilo do icone com link da section portfolio */
         width: 50px;
         height: 50px;
     }
 
     .layer h5{
+        /* estilo do h5 da section portfolio */
         font-size: 1rem;
     }
 
     .layer p{
+        /* estilo do p da section portfolio */
         font-size: 0.8rem;
     }
 }
 
-@media (max-width: 360px){
-
-    *{
-        /*overflow-x: hidden;*/
-    }
-
+@media (max-width: 360px){ /* tela até 360px */
     .row img{
+        /* estilo do img da section portfolio */
         width: 100%;
         height: 12rem;
         margin-right: 0.5rem;
     }
 
     .layer{
+        /* estilo da layer da section portfolio */
         width: 100%;
     }
 
     .row:hover img {
+        /* hover da img da section portfolio */
         transform: scale(1);
     }
 
     .portfolio-content {
+        /* estilo da section portfolio */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
     }
 
     .home-text p{
+        /* estilo do p da section home */
         padding-right: 0.1rem;
         text-align: center;
     }
 
     .home-text h1{
+        /* estilo do h1 da section home */
         font-size: 3rem;
         text-align: center;
     }
 
     .home-text h3{
+        /* estilo do h3 da section home */
         font-size: x-large;
         text-align: center;
     }
 
     .button{
+        /* estilo botao da div dos textos da home: Diga ola e veja meus trabalhos */
         padding: 0.1rem;
     }
 
     .slide{
+        /* estilo dos textos olá eu sou */
         text-align: center;
     }
 
     .layer{
+        /* estilo dos textos da layer da section portfolio */
         font-size: small;
     }
 
     .layer i{
+        /* estilo dos links da layer da section portfolio */
         width: 45px;
         height: 45px;
     }
 
     .layer h5{
+        /* estilo do h5 da layer da section portfolio */
         font-size: 1rem;
     }
 
     .layer p{
+        /* estilo do p da layer da section portfolio */
         font-size: 0.8rem;
     }
 }
