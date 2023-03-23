@@ -9,7 +9,7 @@ Portfolio Pessoal com HTML5, CSS3 e Javascript
 <br>
 
 <p align="center">
-  <img style="border:2px solid black" alt="Imagem Principal" src="IMG.png" width="100%">
+  <img style="border:2px solid black" alt="Imagem Principal" src="imgs/IMG.png" width="100%">
 </p>
 
 ---
@@ -31,6 +31,6 @@ Este projeto foi desenvolvido inicialmente para a Matéria de ILP-540 para a Fat
 Daí decidi criar um Portfolio pessoal, não só como idéia de projeto para a matéria como também necessidade para montar
 um currículo melhor e com um Portfolio de Dev. Front-end.
 
-Você pode ver o site neste link: [Portfolio Pessoal](https://nigerade.github.io/Projeto-Site/)
+Você pode ver o site neste link: [Portfolio Pessoal](https://nigerade.github.io/Portfolio2.0/)
 
 --- 
