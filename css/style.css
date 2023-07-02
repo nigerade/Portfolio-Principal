@@ -27,75 +27,6 @@ body {
     color: var(--text-color);
 }
 
-header {
-    /* configuracoes do header */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 22px 15%;
-    border-bottom: 1px solid transparent;
-    transition: all .45s ease;
-}
-
-.header2{
-    /* configuracoes quando o usuario clica no menu hamburguer */
-    background-color: #2a2a2a;
-    transition: all .45s ease;
-}
-
-.logo{
-    /* configuracoes do texto: Dev. */
-    color: var(--text-color);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-span{
-    /* deixa o: E, do Dev. da main color */
-    color: var(--main-color);
-}
-
-.navlist{
-    /* configura os links do header */
-    display: flex;
-}
-
-.navlist a{
-    /* estilo dos links do header */
-    font-size: 17px;
-    font-weight: 510;
-    color: var(--text-color);
-    margin: 0 25px;
-    transition: all .45s ease;
-}
-
-.navlist a:hover{
-    /* ao passar o mouse por cima dos links do header */
-    color: var(--main-color);
-}
-
-.navlist a:active{
-    /* estilo do link ativo */
-    color: var(--text-color);
-}
-
-#menu-icon{
-    /* estilo do menu hamburguer (icone) */
-    font-size: 35px;
-    color: var(--text-color);
-    z-index: 10001;
-    cursor: pointer;
-    margin-left: 25px;
-    display: none;
-}
-
 section {
     /* configuracao padrao para todas as sessoes */
     padding: 160px 15% 120px;
@@ -150,6 +81,10 @@ section {
     font-weight: 500;
 }
 
+.home-foto{
+    width: 300px;
+}
+
 .home-text h1 {
     /* texto: "Nicholas!" */
     font-size: var(--big-font);
@@ -157,15 +92,6 @@ section {
     color: var(--text-color);
     list-style: 1.1;
     margin: 0 0 8px;
-}
-
-.home-text h3 {
-    /* texto: "Desenvolvedor Front-end." */
-    color: var(--text-color);
-    margin: 0 0 35px;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.1;
 }
 
 .home-text p {
@@ -188,13 +114,13 @@ section {
     display: inline-block;
     padding: 12px 28px;
     background: var(--main-color);
-    border-radius: 5px;
     color: var(--text-color);
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
     transition: all .45s ease;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .btn:hover {
@@ -472,14 +398,6 @@ header.sticky {
     gap: 2.5rem;
 }
 
-#mapa{
-    /* estilo da section mapa */
-    width: 100%;
-    padding: 1rem;
-    border-radius: 2rem;
-    margin-top: 3rem;
-}
-
 .contact-text h4 {
     /* estilo do h4 da section contato */
     color: var(--text-color);
@@ -587,47 +505,6 @@ form textarea {
     transform: scale(0.95);
     cursor: pointer;
 }
-
-.end {
-    /* estilo do footer */
-    padding: 20px 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    background-color: var(--second-bg-color);
-}
-
-.last-text p {
-    /* estilo do p da section end (Footer) */
-    color: var(--second-color);
-    font-size: 17px;
-}
-
-.last-text p:hover {
-    /* hover do p da section end (Footer) */
-    transform: translateX(3px);
-    transition: all .55s ease;
-}
-
-.top i {
-    /* estilo do icone de seta da section end (Footer) */
-    padding: 10px;
-    border-radius: 20%;
-    font-size: 20px;
-    color: var(--text-color);
-    background: var(--main-color);
-
-}
-
-.top i:hover {
-    /* hover do icone de seta da section end (Footer) */
-    transition: all .90s ease;
-    transform: translateY(-4px);
-    background-color: var(--text-color);
-    color: var(--main-color);
-}
-
 
 /* CSS RESPONSIVO */
 @media (max-width: 1480px) { /* tela até 1480px */

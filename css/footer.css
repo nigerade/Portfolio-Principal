@@ -1,0 +1,39 @@
+.end {
+    /* estilo do footer */
+    padding: 20px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--second-bg-color);
+}
+
+.last-text p {
+    /* estilo do p da section end (Footer) */
+    color: var(--second-color);
+    font-size: 17px;
+}
+
+.last-text p:hover {
+    /* hover do p da section end (Footer) */
+    transform: translateX(3px);
+    transition: all .55s ease;
+}
+
+.top i {
+    /* estilo do icone de seta da section end (Footer) */
+    padding: 10px;
+    border-radius: 20%;
+    font-size: 20px;
+    color: var(--text-color);
+    background: var(--main-color);
+
+}
+
+.top i:hover {
+    /* hover do icone de seta da section end (Footer) */
+    transition: all .90s ease;
+    transform: translateY(-4px);
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
