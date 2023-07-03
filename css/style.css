@@ -173,6 +173,7 @@ header.sticky {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    background-color: var(--second-bg-color);
 }
 
 .sobre-img img {
@@ -208,7 +209,7 @@ header.sticky {
 
 .servicos {
     /* estilo section serviços */
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .main-texto {
@@ -240,7 +241,7 @@ header.sticky {
 
 .box {
     /* estilo da div */ 
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     padding: 35px 45px;
     border-radius: 8px;
     transition: all .45s ease;
@@ -298,6 +299,10 @@ header.sticky {
     /* hover da box da section servicos */
     transform: translateY(-8px);
     cursor: pointer;
+}
+
+#portfolio{
+    background-color: var(--second-bg-color);
 }
 
 .portfolio-content {
@@ -391,7 +396,7 @@ header.sticky {
 
 .contact {
     /* estilo da section contato */
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -448,9 +453,8 @@ header.sticky {
     /* estilo dos icones da section contato */
     height: 45px;
     width: 45px;
-    background: var(--main-color);
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 2.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -461,8 +465,8 @@ header.sticky {
 
 .contact-icons i:hover {
     /* hover dos icones da section contato */
-    background: var(--text-color);
-    color: var(--main-color);
+    transition: all .5s ease;
+    transform: translateY(-10px);
 }
 
 .contact-form form {
@@ -475,12 +479,11 @@ form textarea {
     /* estilo do form, input, e textarea form da section contato */
     width: 100%;
     padding: 14px;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     color: var(--text-color);
     border: none;
     outline: none;
     font-size: 15px;
-    border-radius: 8px;
     margin-bottom: 10px;
 }
 
