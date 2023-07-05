@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
     list-style-type: none;
 }
 
@@ -29,7 +29,7 @@ body {
 
 section {
     /* configuracao padrao para todas as sessoes */
-    padding: 160px 15% 120px;
+    padding: 16rem 15% 16rem;
 }
 
 .home {
@@ -38,8 +38,8 @@ section {
     height: 100vh;
     width: 100%;
     background-image:
-    linear-gradient(to bottom, #0F2027, rgba(32, 58, 67, 0.1)),
-    url('../imgs/fundo.jpg');
+        linear-gradient(to bottom, #0F2027, rgba(32, 58, 67, 0.1)),
+        url('../imgs/fundo.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -50,39 +50,7 @@ section {
 
 .slide {
     /* botão saiba mais */
-    margin-bottom: 20px;
-}
-
-.one {
-    /* texto: "Olá" */
-    display: inline-block;
-    margin-right: 15px;
-    height: 32px;
-    padding: 0 15px;
-    line-height: 32px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 5px;
-    background: var(--main-color);
-    color: var(--text-color);
-}
-
-.one:hover{
-    /* hover do texto: "Olá" */
-    transform: scale(1.1);
-    transition: all .45s ease;
-}
-
-.two {
-    /* texto: eu sou */
-    display: inline-block;
-    color: var(--second-color);
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.home-foto{
-    width: 300px;
+    margin-bottom: 1.2rem;
 }
 
 .home-text h1 {
@@ -92,6 +60,7 @@ section {
     color: var(--text-color);
     list-style: 1.1;
     margin: 0 0 8px;
+    text-shadow: 1px 1px 2px #000, 0 0 1em darkorange, 0 0 0.2em darkorange;
 }
 
 .home-text p {
@@ -102,6 +71,10 @@ section {
     margin-bottom: 40px;
 }
 
+#home-saiba{
+    margin-top: 1rem;
+}
+
 .button {
     /* botões Diga Olá! e Veja Meu Trabalho! */
     display: flex;
@@ -110,7 +83,7 @@ section {
 }
 
 .btn {
-    /* estilo botão Diga Olá */
+    /* estilo dos botões */
     display: inline-block;
     padding: 12px 28px;
     background: var(--main-color);
@@ -213,25 +186,25 @@ header.sticky {
 }
 
 .main-texto {
-    /* texto da section servicos */ 
+    /* texto da section servicos */
     text-align: center;
 }
 
 .main-texto p {
-    /* p da section servicos */ 
+    /* p da section servicos */
     font-size: 15px;
     color: var(--second-color);
     margin-bottom: 15px;
 }
 
 .main-texto h2 {
-    /* h2 da section servicos */ 
+    /* h2 da section servicos */
     font-size: var(--h2-font);
     line-height: 1;
 }
 
 .servicos-conteudo {
-    /* estilo da div */ 
+    /* estilo da div */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     text-align: center;
@@ -240,7 +213,7 @@ header.sticky {
 }
 
 .box {
-    /* estilo da div */ 
+    /* estilo da div */
     background: var(--second-bg-color);
     padding: 35px 45px;
     border-radius: 8px;
@@ -248,13 +221,13 @@ header.sticky {
 }
 
 .s-icons i {
-    /* estilo da div */ 
+    /* estilo da div */
     font-size: 32px;
     margin-bottom: 20px;
 }
 
 .box h3 {
-    /* estilo do h3 da div */ 
+    /* estilo do h3 da div */
     font-size: 24px;
     font-weight: 600;
     color: var(--text-color);
@@ -262,7 +235,7 @@ header.sticky {
 }
 
 .box p {
-    /* estilo do p da div */ 
+    /* estilo do p da div */
     color: var(--second-color);
     font-size: 1rem;
     line-height: 1.8;
@@ -270,7 +243,7 @@ header.sticky {
 }
 
 .saiba {
-    /* estilo do botao da div da section servicos */ 
+    /* estilo do botao da div da section servicos */
     display: inline-block;
     padding: 8px 18px;
     background: #333333;
@@ -282,7 +255,7 @@ header.sticky {
 }
 
 .saiba:hover {
-    /* hover do botao da div da section servicos */ 
+    /* hover do botao da div da section servicos */
     letter-spacing: 1px;
     background: var(--main-color);
     color: var(--text-color);
@@ -290,7 +263,7 @@ header.sticky {
 }
 
 .s-icons:hover {
-    /* hover do icone da div da section serviços  */ 
+    /* hover do icone da div da section serviços  */
     color: var(--main-color);
     transition: all .45s ease;
 }
@@ -301,7 +274,7 @@ header.sticky {
     cursor: pointer;
 }
 
-#portfolio{
+#portfolio {
     background-color: var(--second-bg-color);
 }
 
@@ -379,8 +352,8 @@ header.sticky {
 
 #link-icon:hover {
     /* hover icone da section portfolio */
-    color: var(--text-color);
-    background-color: var(--main-color);
+    transform: scale(1.5);
+    background-color: transparent;
     transition: all .90s ease;
 }
 
@@ -403,18 +376,19 @@ header.sticky {
     gap: 2.5rem;
 }
 
+.contact-text h2 {
+    /* estilo do h2 da section contato */
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
 .contact-text h4 {
     /* estilo do h4 da section contato */
     color: var(--text-color);
     margin: 18px 0;
     font-size: 20px;
     font-weight: 600;
-}
-
-.contact-text h2{
-    /* estilo do h2 da section contato */
-    font-size: var(--h2-font);
-    line-height: 1;
+    margin-top: 1.5rem;
 }
 
 .contact-text p {
@@ -422,12 +396,13 @@ header.sticky {
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 1.8;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .list {
     /* estilo do list da section contato */
     margin-bottom: 2.8rem;
+    margin-top: 2rem;
 }
 
 .list li {
@@ -439,7 +414,7 @@ header.sticky {
     /* estilo do a dentro da li da section contato */
     display: block;
     color: var(--second-color);
-    font-size: 14px;
+    font-size: 1rem;
     transition: all .45s ease;
 }
 
@@ -449,7 +424,7 @@ header.sticky {
     transform: translateX(5px);
 }
 
-.contact-icons i { 
+.contact-icons i {
     /* estilo dos icones da section contato */
     height: 45px;
     width: 45px;
@@ -467,6 +442,7 @@ header.sticky {
     /* hover dos icones da section contato */
     transition: all .5s ease;
     transform: translateY(-10px);
+    color: var(--main-color);
 }
 
 .contact-form form {
@@ -507,219 +483,4 @@ form textarea {
     /* hover do botao enviar da section contato */
     transform: scale(0.95);
     cursor: pointer;
-}
-
-/* CSS RESPONSIVO */
-@media (max-width: 1480px) { /* tela até 1480px */
-    header {
-        /* estilo do header */
-        padding: 12px 2.5%;
-        transition: .1s;
-    }
-
-    header.sticky {
-        /* estilo do header quando muda de classe ao scrollar */
-        padding: 10px;
-    }
-
-    section {
-        /* estilo das sections padrao */
-        padding: 110px 3% 60px;
-    }
-
-    .end {
-        /* estilo da section end (Footer) */
-        padding: 15px 3%;
-    }
-}
-
-@media (max-width: 1100px) { /* tela até 1100px */
-    :root {
-        /* declarando variaveis novamente */
-        /* para mudar os valores e se adequar à tela */
-        --big-font: 4rem;
-        --h2-font: 2.5rem;
-        --p-font: 1rem;
-        transition: .1s;
-    }
-
-    .home-text h3 {
-        /* estilo do h3 da section home */
-        font-size: 2.5rem;
-    }
-
-    .home {
-        /* estilo da section home */
-        height: 105vh;
-    }
-}
-
-@media (max-width: 920px) { /* tela até 920px */
-    .sobre {
-        /* estilo da section sobre */
-        grid-template-columns: 1fr;
-    }
-
-    .sobre-img {
-        /* estilo da img da section sobre */
-        text-align: center;
-        order: 2;
-    }
-
-    .sobre-img img {
-        /* estilo da img da section sobre */
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
-
-    .contact {
-        /* estilo da section contato */
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 840px) { /* tela até 840px */
-    #menu-icon {
-        /* estilo do menu hamburguer */
-        /* sai do display none e mostra o menu */
-        display: block;
-    }
-
-    .navlist {
-        /* estilo da navlist - links header */
-        position: absolute;
-        top: -1000px;
-        right: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--bg-color);
-        text-align: left;
-        transition: all .45s ease;
-    }
-
-    .navlist a {
-        /* estilo dos links da navlist */
-        display: block;
-        margin: 17px;
-        font-size: 20px;
-        transition: all .45s ease;
-        color: var(--text-color);
-    }
-
-    .navlist a:hover {
-        /* hover dos links da navlist */
-        color: var(--main-color);
-    }
-
-    .navlist a:active {
-        /* links da navlist quando ativados */
-        color: var(--text-color);
-    }
-
-    .navlist.open {
-        /* links da navlist quando abertos*/
-        top: 100%;
-    }
-
-    .portfolio-content {
-        /* estilo da section portfolio */
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-    }
-}
-
-@media (max-width: 500px){ /* tela até 500px */
-    .layer i{
-        /* estilo do icone com link da section portfolio */
-        width: 50px;
-        height: 50px;
-    }
-
-    .layer h5{
-        /* estilo do h5 da section portfolio */
-        font-size: 1rem;
-    }
-
-    .layer p{
-        /* estilo do p da section portfolio */
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 360px){ /* tela até 360px */
-    .row img{
-        /* estilo do img da section portfolio */
-        width: 100%;
-        height: 12rem;
-        margin-right: 0.5rem;
-    }
-
-    .layer{
-        /* estilo da layer da section portfolio */
-        width: 100%;
-    }
-
-    .row:hover img {
-        /* hover da img da section portfolio */
-        transform: scale(1);
-    }
-
-    .portfolio-content {
-        /* estilo da section portfolio */
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-    }
-
-    .home-text p{
-        /* estilo do p da section home */
-        padding-right: 0.1rem;
-        text-align: center;
-    }
-
-    .home-text h1{
-        /* estilo do h1 da section home */
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .home-text h3{
-        /* estilo do h3 da section home */
-        font-size: x-large;
-        text-align: center;
-    }
-
-    .button{
-        /* estilo botao da div dos textos da home: Diga ola e veja meus trabalhos */
-        padding: 0.1rem;
-    }
-
-    .slide{
-        /* estilo dos textos olá eu sou */
-        text-align: center;
-    }
-
-    .layer{
-        /* estilo dos textos da layer da section portfolio */
-        font-size: small;
-    }
-
-    .layer i{
-        /* estilo dos links da layer da section portfolio */
-        width: 45px;
-        height: 45px;
-    }
-
-    .layer h5{
-        /* estilo do h5 da layer da section portfolio */
-        font-size: 1rem;
-    }
-
-    .layer p{
-        /* estilo do p da layer da section portfolio */
-        font-size: 0.8rem;
-    }
 }

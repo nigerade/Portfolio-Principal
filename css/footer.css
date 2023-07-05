@@ -8,16 +8,17 @@
     background-color: var(--second-bg-color);
 }
 
-.last-text p {
+.last-text a {
     /* estilo do p da section end (Footer) */
     color: var(--second-color);
     font-size: 17px;
 }
 
-.last-text p:hover {
+.last-text a:hover {
     /* hover do p da section end (Footer) */
     transform: translateX(3px);
     transition: all .55s ease;
+    color: darkorange;
 }
 
 .top i {
