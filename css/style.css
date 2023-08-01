@@ -29,17 +29,15 @@ body {
 
 section {
     /* configuracao padrao para todas as sessoes */
-    padding: 16rem 15% 16rem;
+    padding: 10rem 15% 10rem;
 }
 
 .home {
     /* estilo da section home */
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-image:
-        linear-gradient(to bottom, #0F2027, rgba(32, 58, 67, 0.1)),
-        url('../imgs/fundo.jpg');
+    background-color: #2a2a2a;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -53,9 +51,19 @@ section {
     margin-bottom: 1.2rem;
 }
 
+.fundo-cinza {
+    background-color: #ccc;
+}
+
+#home-foto {
+    border-radius: 50%;
+    width: 420px;
+    border: 7px solid #fff;
+}
+
 .home-text h1 {
     /* texto: "Nicholas!" */
-    font-size: var(--big-font);
+    font-size: 3rem;
     font-weight: 700;
     color: var(--text-color);
     list-style: 1.1;
@@ -66,13 +74,14 @@ section {
 .home-text p {
     /* texto: "Técnico formado..." */
     color: var(--second-color);
-    font-size: var(--p-font);
+    font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 40px;
     text-shadow: 1px 1px 2px #000;
+    margin: 0 10rem 48px 10rem;
 }
 
-#home-saiba{
+#home-saiba {
     margin-top: 1rem;
     text-shadow: 1px 1px 2px #000;
 }
