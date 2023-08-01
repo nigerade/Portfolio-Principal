@@ -59,6 +59,12 @@ section {
     border-radius: 50%;
     width: 420px;
     border: 7px solid #fff;
+    box-shadow: 1px 1px 2px #000;
+}
+
+#home-foto:hover {
+    transition: all .3s ease;
+    border: 15px solid #fff;
 }
 
 .home-text h1 {
