@@ -7,7 +7,7 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background: transparent;
     padding: 22px 15%;
     border-bottom: 1px solid transparent;
@@ -59,7 +59,7 @@ span {
 
 #menu-icon {
     /* estilo do menu hamburguer (icone) */
-    font-size: 35px;
+    font-size: 3rem;
     color: var(--text-color);
     z-index: 10001;
     cursor: pointer;

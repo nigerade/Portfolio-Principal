@@ -57,14 +57,11 @@ section {
 
 #home-foto {
     border-radius: 50%;
-    width: 420px;
     border: 7px solid #fff;
     box-shadow: 1px 1px 2px #000;
-}
-
-#home-foto:hover {
-    transition: all .3s ease;
-    border: 15px solid #fff;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 .home-text h1 {
@@ -84,7 +81,6 @@ section {
     line-height: 1.8;
     margin-bottom: 40px;
     text-shadow: 1px 1px 2px #000;
-    margin: 0 10rem 48px 10rem;
 }
 
 #home-saiba {
