@@ -113,7 +113,8 @@ section {
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
 }
 
 .slide {
@@ -177,7 +178,7 @@ section {
 
 .button {
     /* botões Diga Olá! e Veja Meu Trabalho! */
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -193,7 +194,6 @@ section {
     letter-spacing: 1px;
     font-weight: 600;
     transition: all .45s ease;
-    width: 100%;
     text-align: center;
 }
 
