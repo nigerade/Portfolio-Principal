@@ -62,10 +62,7 @@
     }
 
     .sobre-img img {
-        /* estilo da img da section sobre */
-        width: 100%;
-        height: auto;
-        max-width: 100%;
+        display: none;
     }
 
     .contact {
