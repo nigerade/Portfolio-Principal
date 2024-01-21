@@ -366,7 +366,7 @@ header.sticky {
     border-radius: 50%;
 }
 
-#link-icon:hover {
+.link-icon:hover {
     /* hover icone da section portfolio */
     transform: scale(1.5);
     background-color: transparent;
@@ -499,4 +499,15 @@ form textarea {
     /* hover do botao enviar da section contato */
     transform: scale(0.95);
     cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
