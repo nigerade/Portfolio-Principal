@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/header.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/footer.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/responsivo.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,236 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <title>Nicholas Gerade</title>
+
+    <style>
+        /* CSS CRÍTICO */
+        header {
+            /* configuracoes do header */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            padding: 22px 15%;
+            border-bottom: 1px solid transparent;
+            transition: all .45s ease;
+        }
+
+        .header2 {
+            /* configuracoes quando o usuario clica no menu hamburguer */
+            background-color: #2a2a2a;
+            transition: all .45s ease;
+        }
+
+        .logo {
+            /* configuracoes do texto: Dev. */
+            color: var(--text-color);
+            font-size: 35px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        span {
+            /* deixa o: E, do Dev. da main color */
+            color: var(--main-color);
+        }
+
+        .navlist {
+            /* configura os links do header */
+            display: flex;
+        }
+
+        .navlist a {
+            /* estilo dos links do header */
+            font-size: 17px;
+            font-weight: 510;
+            color: var(--text-color);
+            margin: 0 25px;
+            transition: all .45s ease;
+        }
+
+        .navlist a:hover {
+            /* ao passar o mouse por cima dos links do header */
+            color: var(--main-color);
+        }
+
+        .navlist a:active {
+            /* estilo do link ativo */
+            color: var(--text-color);
+        }
+
+        #menu-icon {
+            /* estilo do menu hamburguer (icone) */
+            font-size: 3rem;
+            color: var(--text-color);
+            z-index: 10001;
+            cursor: pointer;
+            display: none;
+        }
+
+        * {
+            /* configurações para a pagina toda */
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            scroll-behavior: smooth;
+            list-style-type: none;
+            font-display: swap;
+        }
+
+        :root {
+            /* variaveis globais no css */
+            --bg-color: #2a2a2a;
+            --second-bg-color: #202020;
+            --text-color: #fff;
+            --second-color: #ccc;
+            --main-color: darkorange;
+            --big-font: 5rem;
+            --h2-font: 3rem;
+            --p-font: 1.1rem;
+        }
+
+        body {
+            /* configuracoes para o body somente */
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        section {
+            /* configuracao padrao para todas as sessoes */
+            padding: 10rem 15% 10rem;
+        }
+
+        .home {
+            /* estilo da section home */
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-color: #2a2a2a;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .slide {
+            /* botão saiba mais */
+            margin-bottom: 1.2rem;
+        }
+
+        .fundo-cinza {
+            background-color: #ccc;
+        }
+
+        #home-foto {
+            border-radius: 50%;
+            border: 7px solid #fff;
+            box-shadow: 1px 1px 2px #000;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .home-text h1 {
+            /* texto: "Nicholas!" */
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin: 0 0 8px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .home-text p {
+            /* texto: "Técnico formado..." */
+            color: var(--second-color);
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        #home-saiba {
+            margin-top: 1rem;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .button {
+            /* Botão Linkedin */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            /* estilo dos botões */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            padding: 12px 28px;
+            background: var(--main-color);
+            color: var(--text-color);
+            font-size: 1rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: all .45s ease;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .btn:hover {
+            /* botão Diga Olá! */
+            transform: scale(0.9);
+        }
+
+        .btn2 {
+            /* estilo botão Veja meu Trabalho */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-left: 35px;
+        }
+
+        .btn2 span i {
+            /* icone do botão Veja meu Trabalho */
+            height: 55px;
+            width: 55px;
+            background: var(--main-color);
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            border-radius: 50%;
+            margin-right: 15px;
+            transition: all .45s ease;
+        }
+
+        .btn2 span i:hover {
+            /* hover do icone do botao veja meu trabalho */
+            transform: scale(1.1) translateY(5px);
+        }
+
+        header.sticky {
+            /* estilo do header quando o usuario desce a pagina e mudar de bg-color */
+            background: var(--bg-color);
+            border-bottom: 1px solid #ffffff1a;
+            padding: 12px 15%;
+        }
+
+        /* FIM CSS CRÍTICO */
+    </style>
 </head>
 
 <body>
@@ -42,7 +272,7 @@
     <section class="home" id="home">
         <div class="home-text">
 
-            <img src="imgs/foto.webp" alt="" id="home-foto">
+            <img src="imgs/foto.webp" alt="Foto de Rosto de Nicholas Gerade" id="home-foto" width="auto" height="auto">
 
             <h1>Nicholas Gerade</h1>
             <p>Técnico formado em Desenvolvimento de Sistemas pela Etec Albert Einstein e cursando Análise
@@ -57,7 +287,8 @@
     <!-- section sobre -->
     <section class="sobre" id="sobre">
         <div class="sobre-img">
-            <img src="imgs/fotoSobre.webp" alt="">
+            <img src="imgs/fotoSobre.webp" alt="Foto de Nicholas Gerade de costa na Beira da Praia" width="auto"
+                height="auto">
         </div>
 
         <div class="sobre-texto">
@@ -93,7 +324,7 @@
 
                 <h3>Comunicação</h3>
                 <p>
-                    Minha habilidade de comunicação é uma ferramenta poderosa que aplico no meu 
+                    Minha habilidade de comunicação é uma ferramenta poderosa que aplico no meu
                     dia-a-dia, tenho facilidade em transmitir minhas ideias e o que penso, e também
                     de receber e passar Feedbacks.
                 </p>
@@ -108,9 +339,9 @@
                 <p>
                     Acredito que tenho um talento natural para organizar e administrar, e motivar equipes e pessoas,
                     uso isso ao meu favor para liderar minha equipe até a vitória, conquistar o sucesso coletivo
-                    como também o sucesso individual. 
+                    como também o sucesso individual.
                 </p>
-                
+
             </div>
 
             <div class="box">
@@ -123,7 +354,7 @@
                     Analisar problemas faz parte da minha vida, tanto na questão lógica quanto
                     assumir uma postura conciliadora e resolver conflitos entre pessoas e equipes.
                     Identifico padrões em problemas, e a postura de pessoas para facilitar a contribuição
-                    em Equipe. 
+                    em Equipe.
                 </p>
             </div>
         </div>
@@ -138,7 +369,7 @@
 
         <div class="portfolio-content">
             <div class="row">
-                <img src="imgs/portfolio1.webp" alt="Projeto de Site em HTML5 e CSS3.">
+                <img src="imgs/portfolio1.webp" alt="Projeto de Site em HTML5 e CSS3." width="auto" height="auto">
                 <div class="layer">
                     <h5>Soft Grippers</h5>
                     <p>Freelance para Empresa de Róbotica</p>
@@ -148,7 +379,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio2.webp" alt="Jogo C - Batalha Naval">
+                <img src="imgs/portfolio2.webp" alt="Jogo C - Batalha Naval" width="auto" height="auto">
                 <div class="layer">
                     <h5>Loja QuiQueijoBomSô</h5>
                     <p>Freelance para Empresa de Varejo</p>
@@ -158,7 +389,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio3.webp" alt="Restaurante - C#">
+                <img src="imgs/portfolio3.webp" alt="Restaurante - C#" width="auto" height="auto">
                 <div class="layer">
                     <h5>Projeto de Lista de Tarefas</h5>
                     <p>Lista de Tarefas</p>
@@ -168,7 +399,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio4.webp" alt="Jogo C# - Pedra Papel Tesoura">
+                <img src="imgs/portfolio4.webp" alt="Jogo C# - Pedra Papel Tesoura" width="auto" height="auto">
                 <div class="layer">
                     <h5>Jogo C# - Pedra Papel Tesoura</h5>
                     <p>Projeto do Jogo Pedra Papel Tesoura</p>
@@ -178,7 +409,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio5.webp" alt="TCC - Investe">
+                <img src="imgs/portfolio5.webp" alt="TCC - Investe" width="auto" height="auto">
                 <div class="layer">
                     <h5>TCC - Investe!</h5>
                     <p>Projeto para curso Técnico Etec Albert Einstein</p>
@@ -188,7 +419,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio6.webp" alt="">
+                <img src="imgs/portfolio6.webp" alt="Site de Cantora Fictícia Jane Doe" width="auto" height="auto">
                 <div class="layer">
                     <h5>Portfolio Fictício</h5>
                     <p>Site criado para Cantora Fictícia Jane Doe</p>
@@ -247,7 +478,7 @@
 
     <!-- script.js no final pra não demorar para carregar a página-->
     <!-- EXPLICAÇÃO: javascript carrega por último depois do html e css-->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 
 </body>
 
