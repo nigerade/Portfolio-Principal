@@ -9,7 +9,7 @@ Portfolio Pessoal com HTML5, CSS3 e Javascript
 <br>
 
 <p align="center">
-  <img style="border:2px solid black" alt="Imagem Principal" src="imgs/IMG.png" width="100%">
+  <img style="border:2px solid black" alt="Imagem Principal" src="imgs/IMG.webp" width="100%">
 </p>
 
 ---
