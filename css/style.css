@@ -518,3 +518,22 @@ form textarea {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+#h1Projetos {
+    text-shadow: 1px 1px 2px #000;
+}
+
+#pProjetos {
+    text-shadow: 1px 1px 2px #000;
+}
+
+#h1Contato {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#h2Contato {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
