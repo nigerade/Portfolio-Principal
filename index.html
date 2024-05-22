@@ -17,236 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <title>Nicholas Gerade</title>
-
-    <style>
-        /* CSS CRÍTICO */
-        header {
-            /* configuracoes do header */
-            position: fixed;
-            width: 100%;
-            top: 0;
-            right: 0;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: transparent;
-            padding: 22px 15%;
-            border-bottom: 1px solid transparent;
-            transition: all .45s ease;
-        }
-
-        .header2 {
-            /* configuracoes quando o usuario clica no menu hamburguer */
-            background-color: #2a2a2a;
-            transition: all .45s ease;
-        }
-
-        .logo {
-            /* configuracoes do texto: Dev. */
-            color: var(--text-color);
-            font-size: 35px;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-
-        span {
-            /* deixa o: E, do Dev. da main color */
-            color: var(--main-color);
-        }
-
-        .navlist {
-            /* configura os links do header */
-            display: flex;
-        }
-
-        .navlist a {
-            /* estilo dos links do header */
-            font-size: 17px;
-            font-weight: 510;
-            color: var(--text-color);
-            margin: 0 25px;
-            transition: all .45s ease;
-        }
-
-        .navlist a:hover {
-            /* ao passar o mouse por cima dos links do header */
-            color: var(--main-color);
-        }
-
-        .navlist a:active {
-            /* estilo do link ativo */
-            color: var(--text-color);
-        }
-
-        #menu-icon {
-            /* estilo do menu hamburguer (icone) */
-            font-size: 3rem;
-            color: var(--text-color);
-            z-index: 10001;
-            cursor: pointer;
-            display: none;
-        }
-
-        * {
-            /* configurações para a pagina toda */
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            text-decoration: none;
-            scroll-behavior: smooth;
-            list-style-type: none;
-            font-display: swap;
-        }
-
-        :root {
-            /* variaveis globais no css */
-            --bg-color: #2a2a2a;
-            --second-bg-color: #202020;
-            --text-color: #fff;
-            --second-color: #ccc;
-            --main-color: darkorange;
-            --big-font: 5rem;
-            --h2-font: 3rem;
-            --p-font: 1.1rem;
-        }
-
-        body {
-            /* configuracoes para o body somente */
-            background: var(--bg-color);
-            color: var(--text-color);
-        }
-
-        section {
-            /* configuracao padrao para todas as sessoes */
-            padding: 10rem 15% 10rem;
-        }
-
-        .home {
-            /* estilo da section home */
-            position: relative;
-            height: 100%;
-            width: 100%;
-            background-color: #2a2a2a;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .slide {
-            /* botão saiba mais */
-            margin-bottom: 1.2rem;
-        }
-
-        .fundo-cinza {
-            background-color: #ccc;
-        }
-
-        #home-foto {
-            border-radius: 50%;
-            border: 7px solid #fff;
-            box-shadow: 1px 1px 2px #000;
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-        }
-
-        .home-text h1 {
-            /* texto: "Nicholas!" */
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--text-color);
-            margin: 0 0 8px;
-            text-shadow: 1px 1px 2px #000;
-        }
-
-        .home-text p {
-            /* texto: "Técnico formado..." */
-            color: var(--second-color);
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin-bottom: 40px;
-            text-shadow: 1px 1px 2px #000;
-        }
-
-        #home-saiba {
-            margin-top: 1rem;
-            text-shadow: 1px 1px 2px #000;
-        }
-
-        .button {
-            /* Botão Linkedin */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .btn {
-            /* estilo dos botões */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 300px;
-            padding: 12px 28px;
-            background: var(--main-color);
-            color: var(--text-color);
-            font-size: 1rem;
-            letter-spacing: 1px;
-            font-weight: 600;
-            transition: all .45s ease;
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        .btn:hover {
-            /* botão Diga Olá! */
-            transform: scale(0.9);
-        }
-
-        .btn2 {
-            /* estilo botão Veja meu Trabalho */
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--text-color);
-            margin-left: 35px;
-        }
-
-        .btn2 span i {
-            /* icone do botão Veja meu Trabalho */
-            height: 55px;
-            width: 55px;
-            background: var(--main-color);
-            color: var(--text-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 35px;
-            border-radius: 50%;
-            margin-right: 15px;
-            transition: all .45s ease;
-        }
-
-        .btn2 span i:hover {
-            /* hover do icone do botao veja meu trabalho */
-            transform: scale(1.1) translateY(5px);
-        }
-
-        header.sticky {
-            /* estilo do header quando o usuario desce a pagina e mudar de bg-color */
-            background: var(--bg-color);
-            border-bottom: 1px solid #ffffff1a;
-            padding: 12px 15%;
-        }
-
-        /* FIM CSS CRÍTICO */
-    </style>
 </head>
 
 <body>
@@ -272,7 +42,7 @@
     <section class="home" id="home">
         <div class="home-text">
 
-            <img src="imgs/foto.webp" alt="Foto de Rosto de Nicholas Gerade" id="home-foto" width="auto" height="auto">
+            <img src="imgs/foto.webp" alt="Foto de Rosto de Nicholas Gerade" id="home-foto" width="0" height="0">
 
             <h1>Nicholas Gerade</h1>
             <p>Técnico formado em Desenvolvimento de Sistemas pela Etec Albert Einstein e cursando Análise
@@ -287,8 +57,8 @@
     <!-- section sobre -->
     <section class="sobre" id="sobre">
         <div class="sobre-img">
-            <img src="imgs/fotoSobre.webp" alt="Foto de Nicholas Gerade de costa na Beira da Praia" width="auto"
-                height="auto">
+            <img src="imgs/fotoSobre.webp" alt="Foto de Nicholas Gerade de costa na Beira da Praia" width="0"
+                height="0">
         </div>
 
         <div class="sobre-texto">
@@ -369,7 +139,7 @@
 
         <div class="portfolio-content">
             <div class="row">
-                <img src="imgs/portfolio1.webp" alt="Projeto de Site em HTML5 e CSS3." width="auto" height="auto">
+                <img src="imgs/portfolio1.webp" alt="Projeto de Site em HTML5 e CSS3." id="imagemProjetos" width="0" height="0">
                 <div class="layer">
                     <h5>Soft Grippers</h5>
                     <p>Freelance para Empresa de Róbotica</p>
@@ -379,7 +149,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio2.webp" alt="Jogo C - Batalha Naval" width="auto" height="auto">
+                <img src="imgs/portfolio2.webp" alt="Jogo C - Batalha Naval" id="imagemProjetos" width="0" height="0">
                 <div class="layer">
                     <h5>Loja QuiQueijoBomSô</h5>
                     <p>Freelance para Empresa de Varejo</p>
@@ -389,7 +159,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio3.webp" alt="Restaurante - C#" width="auto" height="auto">
+                <img src="imgs/portfolio3.webp" alt="Restaurante - C#" id="imagemProjetos" width="0" height="0">
                 <div class="layer">
                     <h5>Projeto de Lista de Tarefas</h5>
                     <p>Lista de Tarefas</p>
@@ -399,7 +169,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio4.webp" alt="Jogo C# - Pedra Papel Tesoura" width="auto" height="auto">
+                <img src="imgs/portfolio4.webp" alt="Jogo C# - Pedra Papel Tesoura" id="imagemProjetos" width="0" height="0">
                 <div class="layer">
                     <h5>Jogo C# - Pedra Papel Tesoura</h5>
                     <p>Projeto do Jogo Pedra Papel Tesoura</p>
@@ -409,7 +179,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio5.webp" alt="TCC - Investe" width="auto" height="auto">
+                <img src="imgs/portfolio5.webp" alt="TCC - Investe" id="imagemProjetos" width="0" height="0">
                 <div class="layer">
                     <h5>TCC - Investe!</h5>
                     <p>Projeto para curso Técnico Etec Albert Einstein</p>
@@ -419,7 +189,7 @@
             </div>
 
             <div class="row">
-                <img src="imgs/portfolio6.webp" alt="Site de Cantora Fictícia Jane Doe" width="auto" height="auto">
+                <img src="imgs/portfolio6.webp" alt="Site de Cantora Fictícia Jane Doe" id="imagemProjetos" width="0" height="">
                 <div class="layer">
                     <h5>Portfolio Fictício</h5>
                     <p>Site criado para Cantora Fictícia Jane Doe</p>
