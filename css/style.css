@@ -537,3 +537,13 @@ form textarea {
     margin-top: 1rem;
     font-weight: 600;
 }
+
+#h1Sobre {
+    font-size: 3rem;
+}
+
+#h2Sobre {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
